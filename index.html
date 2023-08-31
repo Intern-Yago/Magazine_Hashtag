@@ -8,7 +8,7 @@
     <title>Magazine</title>
   </head>
   <body class="bg-stone-200 flex flex-col">
-    <section id="carrinho" class="bg-slate-950 fixed top-0 right-[-360px] h-screen w-[360px] text-slate-200 z-50">
+    <section id="carrinho" class="bg-slate-950 fixed top-0 right-[-360px] h-screen w-[360px] text-slate-200 z-50 duration-200 border-l border-slate-200 p-5 flex flex-col justify-between">
       <div id="cabecalho-carrinho" class="flex justify-between m-4">
         <p>Meu carrinho</p>
         <button id="fechar-carrinho">
@@ -17,14 +17,11 @@
 
       </div>
       <section id="produtos-carrinho">
-        <p>camisa</p>
-        <p>casaco</p>
-        <p>jaqueta</p>
       </section>
       <p id="preco-total">$200</p>
       <button class="bg-slate-200 text-slate-900 p-1">Finalizar compra</button>
     </section>
-    <header class="justify-between flex bg-slate-950 px-8 py-4 sticky top-0 shadow-slate-400 shadow-xl text-xl">
+    <header class="justify-between flex bg-slate-950 px-8 py-4 sticky top-0 shadow-slate-400 shadow-xl text-xl z-10">
       <img class="h-16" src="./assets/logo/logo_branca.png" alt="Logo Syrius">
       <div class="text-slate-200 flex gap-2 items-end mx-2">
         <buttton id="abrir-carrinho" class="mx-2 cursor-pointer" >
