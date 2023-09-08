@@ -4,7 +4,7 @@ import { adicionarCarrinho } from "./menuCarrinho"
 export function renderizarCatalogo(){
     for(const produtoCatalogo of catalogo){
         const cartaoProduto = `
-            <div class="boder-solid border-2 flex flex-col p-2 justify-between shadow-xl shadow-slate-400 rounded-lg w-48 m-2 group " id="card-produto-${produtoCatalogo.id}">
+            <div class="boder-solid border-2 flex flex-col p-2 justify-between shadow-xl shadow-slate-400 rounded-lg w-48 m-2 group ${produtoCatalogo.feminino?'feminino':'masculino'}" id="card-produto-${produtoCatalogo.id}">
                 <img src="./assets/img/${produtoCatalogo.imagem}" 
                     class="group-hover:scale-110 duration-300 my-3 rounded-lg"
                     alt="Produto 1"
